@@ -1,0 +1,11 @@
+machine:
+  timezone:
+    Asia/Tokyo
+
+dependencies:
+  pre:
+    - gem install bundler --pre
+
+test:
+  pre:
+    - bundle exec rubocop
