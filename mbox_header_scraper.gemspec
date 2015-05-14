@@ -4,19 +4,19 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'mbox_header_scraper/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "mbox_header_scraper"
+  spec.name          = 'mbox_header_scraper'
   spec.version       = MboxHeaderScraper::VERSION
-  spec.authors       = ["Yuya TAMANO"]
-  spec.email         = ["everfree.main@gmail.com"]
+  spec.authors       = ['Yuya TAMANO']
+  spec.email         = ['everfree.main@gmail.com']
 
   spec.summary       = 'tool to search mail header in mbox file'
   spec.description   = 'See README.md for more information.'
   spec.homepage      = 'https://github.com/tamano/mbox_header_scraper'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
-  spec.bindir        = "exe"
+  spec.bindir        = 'exe'
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
-  spec.require_paths = ["lib"]
+  spec.require_paths = ['lib']
 
   if spec.respond_to?(:metadata)
     # spec.metadata['allowed_push_host']
