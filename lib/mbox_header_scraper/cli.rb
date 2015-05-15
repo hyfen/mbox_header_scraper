@@ -7,5 +7,10 @@ class MboxHeaderScraper::CLI < Thor
     'load mbox file and output in tsv format file. ' \
     'the file includes No, Subject(short), From, To, CC, Body(email address only)'
   def mail_address_list(in_file, out_file)
+    MboxHeaderScraper::Scraper.process(
+      in_file,
+      out_file,
+      { Subject: true, From: true, To: true, CC: true, Body: :mail_addresses }
+    )
   end
 end
