@@ -1,0 +1,48 @@
+From hugahuga@example.com Fri May 15 18:10:15 2015
+From: =?utf-8?B?546J6YeO6KOV5Lmf?= <hugahuga@example.com>
+Content-Type: multipart/alternative;
+	boundary="Apple-Mail=_FC9B1558-0032-4FF4-9BC2-143CCC6F0C0F"
+X-Smtp-Server: mail.example.com
+Subject: hugahuga@example.com
+Message-Id: <87A9E4FE-95D4-42B3-BF13-DAD7CE32AA02@example.com>
+X-Universally-Unique-Identifier: 30912024-7350-4C59-8B65-2A47F17AD4BA
+Date: Fri, 15 May 2015 18:10:15 +0900
+To: hogehoge@example.com
+Mime-Version: 1.0 (Mac OS X Mail 8.2 \(2098\))
+
+
+--Apple-Mail=_FC9B1558-0032-4FF4-9BC2-143CCC6F0C0F
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain;
+	charset=utf-8
+
+=E8=8B=B1=E8=AA=9E=E3=81=8C=E6=B7=B7=E5=9C=A8
+
+hugahuga@example.com <mailto:hugahuga@example.com>
+
+
+=E6=96=87=E9=A0=AD=E3=81=98=E3=82=83=E3=81=AA=E3=81=84=E5=A0=B4=E5=90=88=E3=
+=82=82hugahuga@example.com <mailto:hugahuga@example.com>
+
+
+--Apple-Mail=_FC9B1558-0032-4FF4-9BC2-143CCC6F0C0F
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html;
+	charset=utf-8
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html =
+charset=3Dutf-8"></head><body style=3D"word-wrap: break-word; =
+-webkit-nbsp-mode: space; -webkit-line-break: after-white-space;" =
+class=3D"">=E8=8B=B1=E8=AA=9E=E3=81=8C=E6=B7=B7=E5=9C=A8<div =
+class=3D""><br class=3D""></div><div class=3D""><a =
+href=3D"mailto:hugahuga@example.com" =
+class=3D"">hugahuga@example.com</a></div><div class=3D""><br =
+class=3D""></div><div class=3D""><br class=3D""></div><div =
+class=3D"">=E6=96=87=E9=A0=AD=E3=81=98=E3=82=83=E3=81=AA=E3=81=84=E5=A0=B4=
+=E5=90=88=E3=82=82<a href=3D"mailto:hugahuga@example.com" =
+class=3D"">hugahuga@example.com</a></div><div class=3D""><br =
+class=3D""></div></body></html>=
+
+--Apple-Mail=_FC9B1558-0032-4FF4-9BC2-143CCC6F0C0F--
+
+
