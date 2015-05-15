@@ -7,6 +7,18 @@ class MboxHeaderScraper::CLI < Thor
     'load mbox file and output in tsv format file. ' \
     'the file includes No, Subject(short), From, To, CC, Body(email address only)'
   def mail_address_list(in_file, out_file)
+    error_message = MboxHeaderScraper::Scraper.check_in_file(in_file)
+    if error_message
+      puts "input file error: #{error_message}"
+      exit 1
+    end
+
+    error_message = MboxHeaderScraper::Scraper.check_out_file(out_file)
+    if error_message
+      puts "output file error: #{error_message}"
+      exit 1
+    end
+
     MboxHeaderScraper::Scraper.process(
       in_file,
       out_file,
