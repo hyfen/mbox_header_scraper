@@ -12,8 +12,4 @@ class MboxHeaderScraper::Scraper
     return 'file already exists.' if File.exist?(filename)
     nil
   end
-
-  def self.analyze_single_mail(mail, options)
-    options ||= { Subject: true, From: true, To: true, CC: true }
-  end
 end
