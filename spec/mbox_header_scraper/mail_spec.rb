@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe MboxHeaderScraper::Mail do
-  describe '.analyze_single_mail' do
+  describe '.header_to_tsv' do
     context 'with simple mail file (simple.txt)' do
       it 'returns Subject at tsv format string' do
         input = File.expand_path('../../fixtures/simple.txt', __FILE__)
@@ -10,7 +10,7 @@ describe MboxHeaderScraper::Mail do
           "Plain\n"
 
         mail = MboxHeaderScraper::Mail.new(input)
-        expect(mail.analyze_single_mail(options)).to eq(output)
+        expect(mail.header_to_tsv(options)).to eq(output)
       end
 
       it 'returns To at tsv format string' do
@@ -22,7 +22,7 @@ describe MboxHeaderScraper::Mail do
           "hoge3@example.net\n"
 
         mail = MboxHeaderScraper::Mail.new(input)
-        expect(mail.analyze_single_mail(options)).to eq(output)
+        expect(mail.header_to_tsv(options)).to eq(output)
       end
 
       it 'returns every value in options at tsv format string' do
@@ -35,7 +35,7 @@ describe MboxHeaderScraper::Mail do
           "\t\t\t\tcc4@example.com\n" \
 
         mail = MboxHeaderScraper::Mail.new(input)
-        expect(mail.analyze_single_mail(options)).to eq(output)
+        expect(mail.header_to_tsv(options)).to eq(output)
       end
     end
 

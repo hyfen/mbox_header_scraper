@@ -8,7 +8,7 @@ class MboxHeaderScraper::Mail
     @mail = Mail.read(mail_fp)
   end
 
-  def analyze_single_mail(options)
+  def header_to_tsv(options)
     options ||= { Subject: true, From: true, To: true, CC: true }
     @mail.subject
   end
