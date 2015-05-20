@@ -16,7 +16,7 @@ CC: =?ISO-2022-JP?XXXXXXXXXXXXXXXXX=?=
  <cc1@example.com>, =?ISO-2022-JP?B?XXXXXXXXXXXXXXXXX?=
  <cc2@example.com>, =?ISO-2022-JP?B?XXXXXXXXXXXXXXXXX=?=
  <cc3@example.com>, =?ISO-2022-JP?B?XXXXXXXXXXXXXXXXX?=
- <cc4@example.net>
+ <cc4@example.com>
 Mime-Version: 1.0 (Mac OS X Mail 8.2 \(2098\))
 
 hugahuga1@example.com
