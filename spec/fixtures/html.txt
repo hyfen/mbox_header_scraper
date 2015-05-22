@@ -8,6 +8,8 @@ Message-Id: <87A9E4FE-95D4-42B3-BF13-DAD7CE32AA02@example.com>
 X-Universally-Unique-Identifier: 30912024-7350-4C59-8B65-2A47F17AD4BA
 Date: Fri, 15 May 2015 18:10:15 +0900
 To: hogehoge@example.com
+CC: cc1@example.com
+
 Mime-Version: 1.0 (Mac OS X Mail 8.2 \(2098\))
 
 
@@ -44,5 +46,3 @@ class=3D"">hugahuga@example.com</a></div><div class=3D""><br =
 class=3D""></div></body></html>=
 
 --Apple-Mail=_FC9B1558-0032-4FF4-9BC2-143CCC6F0C0F--
-
-

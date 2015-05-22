@@ -38,7 +38,25 @@ describe MboxHeaderScraper::Mail do
       end
     end
 
-    it 'returns tsv format string with html mail file'
+    context 'with html mail file (html.txt)' do
+      before :all do
+        input = File.expand_path('../../fixtures/html.txt', __FILE__)
+        @mail = MboxHeaderScraper::Mail.new(input)
+      end
+
+      it 'returns every value in options at tsv format string' do
+        options = { Subject: true, Date: true, From: true, To: true, CC: true }
+        output = \
+          "hugahuga@example.com\t" \
+          "Fri, 15 May 2015 18:10:15 +0900\t" \
+          "hugahuga@example.com\t" \
+          "hogehoge@example.com\t" \
+          "cc1@example.com\n"
+
+        expect(@mail.header_to_tsv(options)).to eq(output)
+      end
+    end
+
     it 'returns tsv format string with utf-8 mail file'
     it 'returns tsv format string with file attached mail file'
     it 'returns empty string with mail file if nothing discovered'
