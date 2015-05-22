@@ -16,6 +16,8 @@ class MboxHeaderScraper::Mail
     last_symbol = nil
 
     IO.foreach(@mail) do |line|
+      line.chomp!
+
       # this must be continuous value of previous header
       if /^ / =~ line
         # use extract_email_address because Subjects and Dates can't be multiple line
