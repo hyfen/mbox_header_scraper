@@ -6,6 +6,7 @@ class MboxHeaderScraper::Mail
     @mail = mail_fp
   end
 
+  # rubocop:disable Metrics/AbcSize
   def header_to_tsv(options = { Subject: true, Date: true, From: true, To: true, CC: true })
     # TODO: prevent undefined options
 
@@ -44,6 +45,7 @@ class MboxHeaderScraper::Mail
     # mail without empty line must be broken
     raise 'this mail is broken'
   end
+  # rubocop:enable Metrics/AbcSize
 
   private
 
