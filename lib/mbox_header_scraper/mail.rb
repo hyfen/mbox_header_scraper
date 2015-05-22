@@ -99,6 +99,6 @@ class MboxHeaderScraper::Mail
   end
 
   def extract_email_address(str)
-    str.scan(/[0-9a-z.\+\-]+@[0-9a-z.\+\-]+/i)
+    str.scan(/[0-9a-z.\+\-\_]+@[0-9a-z.\+\-\_]+/i)
   end
 end
