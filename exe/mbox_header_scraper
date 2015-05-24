@@ -1,0 +1,3 @@
+require 'mbox_header_scraper'
+
+MboxHeaderScraper::CLI.start

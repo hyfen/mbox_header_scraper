@@ -1,0 +1,15 @@
+From: =?utf-8?B?546J6YeO6KOV5Lmf?= <hogehoge@example.com>
+Content-Type: text/plain;
+	charset=utf-8
+Content-Transfer-Encoding: base64
+X-Smtp-Server: mail.example.com
+Subject: =?utf-8?B?44OG44K544OI44Oh44O844Or?=
+Message-Id: <AB27C154-BA8A-456D-9277-6574F42EC405@eli-sys.jp>
+X-Universally-Unique-Identifier: FEC6146B-62EA-4171-834B-87F6748F3331
+Date: Fri, 15 May 2015 18:37:55 +0900
+To: hogehoge@example.com
+Mime-Version: 1.0 (Mac OS X Mail 8.2 \(2098\))
+
+44GT44KM44Gv44OG44K544OI44Oh44O844Or44Gn44GZ44CCDQoNCmhvZ2Vob2dlQGV4YW1wbGUu
+Y29tDQoNCuaXpeacrOiqnuOBvuOBmOOCiuOBp+OBmeOBjOOAgg==
+

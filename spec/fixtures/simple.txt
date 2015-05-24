@@ -1,0 +1,26 @@
+From hugahuga@example.com Fri May 15 18:14:47 2015
+From: =?utf-8?B?546J6YeO6KOV5Lmf?= <hugahuga@example.com>
+Content-Type: text/plain;
+	charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-Smtp-Server: mail.example.com
+Subject: Plain
+Message-Id: <6933622F-5965-4005-A0F2-CA7BD9281432@example.com>
+X-Universally-Unique-Identifier: 9C1FD3A3-0FA3-486A-B556-361EEEE5E4FC
+Date: Fri, 15 May 2015 18:14:47 +0900
+To: hoge1@example.com,
+ hige2@example.net,
+ hoge1@example.com,
+ hoge3@example.net
+CC: =?ISO-2022-JP?XXXXXXXXXXXXXXXXX=?=
+ <cc1@example.com>, =?ISO-2022-JP?B?XXXXXXXXXXXXXXXXX?=
+ <cc2@example.com>, =?ISO-2022-JP?B?XXXXXXXXXXXXXXXXX=?=
+ <cc3@example.com>, =?ISO-2022-JP?B?XXXXXXXXXXXXXXXXX?=
+ <cc4@example.com>
+Mime-Version: 1.0 (Mac OS X Mail 8.2 \(2098\))
+
+hugahuga1@example.com
+
+  hugahuga2@example.com
+
+this is hugahuga3@example.com
