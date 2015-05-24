@@ -22,7 +22,7 @@ class MboxHeaderScraper::CLI < Thor
     MboxHeaderScraper::Scraper.process(
       in_file,
       out_file,
-      { Subject: true, From: true, To: true, CC: true }
+      { Subject: true, Date: true, From: true, To: true, CC: true }
     )
   end
 end
