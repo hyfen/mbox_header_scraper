@@ -1,8 +1,10 @@
 # scrape mbox file
 class MboxHeaderScraper::Scraper
   # rubocop:disable Metrics/AbcSize
-  def self.process(in_file, out_file, options = nil)
+  def self.process(in_file, out_file, options = { Subject: true, Date: true, From: true, To: true, CC: true })
     Tempfile.open('mbox_header_scraper_result') do |result_file|
+      result_file.write(insert_header(options))
+
       tmp = nil
 
       # to prevent nil error on first line
@@ -44,5 +46,15 @@ class MboxHeaderScraper::Scraper
   def self.single_mail_to_tsv(mail_file, options)
     mail = MboxHeaderScraper::Mail.new(mail_file)
     mail.header_to_tsv(options)
+  end
+
+  def self.insert_header(headers)
+    line = []
+
+    headers.select { |v| headers[v] == true }.keys.each do |v|
+      line << v
+    end
+
+    (line.join("\t") + "\n")
   end
 end

@@ -7,7 +7,7 @@ class MboxHeaderScraper::Mail
   end
 
   # rubocop:disable Metrics/AbcSize
-  def header_to_tsv(options = { Subject: true, Date: true, From: true, To: true, CC: true })
+  def header_to_tsv(options)
     # TODO: prevent undefined options
 
     targets = get_target_keys(options)
