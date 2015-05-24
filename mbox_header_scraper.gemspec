@@ -12,6 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary       = 'tool to search mail header in mbox file'
   spec.description   = 'See README.md for more information.'
   spec.homepage      = 'https://github.com/tamano/mbox_header_scraper'
+  spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = 'exe'
