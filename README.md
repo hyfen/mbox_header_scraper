@@ -1,6 +1,6 @@
 # MboxHeaderScraper
 
-[![Circle CI](https://circleci.com/gh/tamano/mbox_header_scraper.svg?style=svg)](https://circleci.com/gh/tamano/mbox_header_scraper) [![Code Climate](https://codeclimate.com/github/tamano/mbox_header_scraper/badges/gpa.svg)](https://codeclimate.com/github/tamano/mbox_header_scraper) [![Test Coverage](https://codeclimate.com/github/tamano/mbox_header_scraper/badges/coverage.svg)](https://codeclimate.com/github/tamano/mbox_header_scraper)
+[![Gem Version](https://badge.fury.io/rb/mbox_header_scraper.svg)](http://badge.fury.io/rb/mbox_header_scraper) [![Circle CI](https://circleci.com/gh/tamano/mbox_header_scraper.svg?style=svg)](https://circleci.com/gh/tamano/mbox_header_scraper) [![Code Climate](https://codeclimate.com/github/tamano/mbox_header_scraper/badges/gpa.svg)](https://codeclimate.com/github/tamano/mbox_header_scraper) [![Test Coverage](https://codeclimate.com/github/tamano/mbox_header_scraper/badges/coverage.svg)](https://codeclimate.com/github/tamano/mbox_header_scraper)
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/mbox_header_scraper`. To experiment with that code, run `bin/console` for an interactive prompt.
 
