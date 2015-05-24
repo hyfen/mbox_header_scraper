@@ -24,7 +24,22 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+How to use.
+
+```bash
+$ mbox_header_scraper mail_address_list {mbox_file} {output_tsv}
+```
+
+Then, result TSV file goes like this.
+
+```
+Subject	Date	From	To	CC
+My Subject	Fri, 15 May 2015 18:14:47 +0900	from@example.com	to1@example.com	
+			to2@example.com	
+テスト	Thu, 14 May 2015 16:39:43 +0900	from@example.com	to@example.com	cc@example.com
+```
+
+That's all!
 
 ## Development
 
