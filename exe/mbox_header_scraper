@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 require 'mbox_header_scraper'
 
 MboxHeaderScraper::CLI.start
