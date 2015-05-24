@@ -1,3 +1,5 @@
+require 'nkf'
+
 # mail object
 class MboxHeaderScraper::Mail
   @mail = nil
@@ -75,7 +77,10 @@ class MboxHeaderScraper::Mail
   def get_if_matched(param, line)
     return nil unless /^#{param}: / =~ line
 
-    if param == :Subject || param == :Date
+    if param == :Subject
+      subject = NKF.nkf('-mw', ($'))
+      [subject.chomp]
+    elsif param == :Date
       [($').chomp]
     else
       extract_email_address(($').chomp)
