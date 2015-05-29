@@ -75,7 +75,7 @@ class MboxHeaderScraper::Mail
   end
 
   def get_if_matched(param, line)
-    return nil unless /^#{param}: / =~ line
+    return nil unless /^#{param}: /i =~ line
 
     if param == :Subject
       subject = NKF.nkf('-mw', ($'))
