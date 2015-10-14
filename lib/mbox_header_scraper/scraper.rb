@@ -13,14 +13,20 @@ class MboxHeaderScraper::Scraper
       end
 
       IO.foreach(in_file) do |line|
-        if /^From / =~ line && !tmp.closed?
+        # encode to convert invalid charcter
+        enc_line = line.encode("UTF-16BE", "UTF-8",
+           invalid: :replace,
+           undef: :replace,
+           replace: '?').encode("UTF-8")
+           
+        if /^From / =~ enc_line && !tmp.closed?
           tmp.close(false)
           result_file.write(single_mail_to_tsv(tmp, options))
           tmp.delete
         end
 
         tmp = Tempfile.open('mbox_header_scraper_tmp') if tmp.closed?
-        tmp.write(line)
+        tmp.write(enc_line)
       end
 
       tmp.close(false)
