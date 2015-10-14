@@ -14,11 +14,9 @@ class MboxHeaderScraper::Scraper
 
       IO.foreach(in_file) do |line|
         # encode to convert invalid charcter
-        enc_line = line.encode("UTF-16BE", "UTF-8",
-           invalid: :replace,
-           undef: :replace,
-           replace: '?').encode("UTF-8")
-           
+        enc_line = line.encode('UTF-16BE', 'UTF-8',
+                               invalid: :replace, undef: :replace, replace: '?').encode('UTF-8')
+
         if /^From / =~ enc_line && !tmp.closed?
           tmp.close(false)
           result_file.write(single_mail_to_tsv(tmp, options))
